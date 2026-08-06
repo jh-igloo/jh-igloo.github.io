@@ -1,0 +1,236 @@
+/* assets/style.css */
+
+:root{
+  --bg: #F5FBFF;
+  --bg-alt: #DCEFF8;
+  --ink: #0B2545;
+  --maxw: 820px;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.container{
+  width: min(var(--maxw), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+a{ color: inherit; }
+
+/* Header */
+.banner{
+  background: var(--ink);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.brand-name{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.subtitle{ margin: 6px 0 0; opacity: 0.85; }
+
+/* Sections */
+.section{
+  padding: 28px 0;
+  border-top: 1px solid #bbb;
+}
+
+.section.alt{
+  background: var(--bg-alt);
+}
+
+h1, h2, h3, h4{ margin: 0 0 10px; }
+h4{ margin-top: 16px; }
+
+.muted{
+  color: rgba(11, 37, 69, 0.72);
+}
+
+/* Layout */
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.two-col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 700px){
+  .two-col{ grid-template-columns: 1fr; }
+}
+
+/* Lists */
+.list{
+  padding-left: 18px;
+  margin: 0;
+}
+
+.list li{ margin: 6px 0; }
+
+/* Buttons */
+.btn{
+  display: inline-block;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: var(--ink);
+  background: #fff;
+}
+
+.btn:visited{ color: var(--ink); }
+
+/* Footer */
+.footer{
+  border-top: 1px solid #bbb;
+  padding: 18px 0;
+}
+
+/* School colours — corner to corner, red on top (top-left) */
+.school{
+  padding: 16px;
+  border: 1px solid #888;
+  color: #fff;
+}
+
+/* Red top-left triangle, green bottom-right triangle */
+.school-ges{
+  background: linear-gradient(to bottom right,
+    #b71c1c 0 50%,
+    #1f7a3a 50% 100%
+  );
+}
+
+/* Red top-left triangle, yellow bottom-right triangle */
+.school-hci{
+  background: linear-gradient(to bottom right,
+    #b71c1c 0 50%,
+    #f2c200 50% 100%
+  );
+}
+
+/* Text shadow for visibility */
+.school h3,
+.school li{
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}
+
+/* Award colours */
+   /* Honourable Mention */
+                  /* honourable mention */
+
+/* Boxes */
+.box{
+  border: 1px solid #aaa;
+  padding: 14px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-window{
+  width: 100%;
+  max-width: 520px;
+  height: 240px;          /* desktop */
+  border: 1px solid #aaa;
+  overflow: hidden;
+  background: #fff;
+}
+
+.slide{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-btn{
+  font-size: 20px;
+  padding: 6px 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 700px){
+  .carousel-window{ height: 160px; }
+  .carousel-btn{ font-size: 16px; padding: 4px 8px; }
+}
+
+/* Embeds */
+.embed{
+  width: 100%;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.embed iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Taller Fancade games */
+.embed.tall{
+  height: 520px;
+}
+
+/* Bigger YouTube */
+.embed.big-video{
+  height: 460px;
+}
+
+@media (max-width: 700px){
+  .embed.tall{ height: 420px; }
+  .embed.big-video{ height: 300px; }
+}
+
+/* Tap-to-play overlay (prevents scroll trapping on mobile) */
+.tap-to-play iframe{
+  pointer-events: none;
+}
+
+.tap-to-play.active iframe{
+  pointer-events: auto;
+}
+
+.tap-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+}
+
+}

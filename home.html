@@ -1,0 +1,251 @@
+<!-- home.html -->
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JingHeng's Igloo</title>
+  <meta name="description" content="JingHeng's Igloo — portfolio, achievements, and interests.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<header class="banner" id="top">
+  <div class="container">
+    <a class="brand-name" href="home.html">Deng JingHeng</a>
+    <h1>JingHeng's Igloo</h1>
+    <p class="subtitle">“The true delight is in the finding out rather than in the knowing.”</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="container">
+      <h2>Education</h2>
+
+      <div class="two-col">
+        <div class="school school-ges">
+          <h3>Gan Eng Seng School (2022–2025)</h3>
+          <ul class="list">
+            <li>Triple Science + Elective Geography</li>
+            <li>GESS Applied Learning Programme</li>
+            <li>Peer Support Leader (EXCO)</li>
+            <li>Dragon Scout Group</li>
+          </ul>
+        </div>
+
+        <div class="school school-hci">
+          <h3>Hwa Chong Institution (2026–2027)</h3>
+          <ul class="list">
+            <li>PFME</li>
+            <li>HCAstro</li>
+            <li>Science & Mathematics Talent Programme</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section alt">
+    <div class="container">
+      <div class="row">
+        <h2>Achievements</h2>
+        <a class="btn" href="achievements.html">See more</a>
+      </div>
+
+      <ul class="list">
+        <li>Singapore Astronomy Olympiad: Silver Medal (15th place)</li>
+        <li>Singapore Mathematical Olympiad (Senior): Silver Medal (Round 2)</li>
+        <li>Singapore Mathematical Olympiad (Open): Silver Medal</li>
+        <li>Singapore Junior Physics Olympiad: Silver Medal</li>
+        <li>International Competition and Assessment for Schools: Distinction (96th percentile)</li>
+        <li>Green Wave Environmental Care Competition: 2nd Place + Team Award</li>
+        <li>Youth STEM Empowerment Programme: QUESTA (Gold) Award</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section class="section">
+    <div class="container">
+      <h2>Interests</h2>
+
+      <!-- Speedcubing -->
+      <div class="box">
+        <h3>Speedcubing (started 2018)</h3>
+        <ul class="list">
+          <li>Personal best: 7.44s (Apr 2026)</li>
+          <li>Average of 5: 9.58s</li>
+          <li>Average of 1000: 11.53s</li>
+        </ul>
+
+        <h4>Gallery</h4>
+
+        <div class="carousel" id="carousel">
+          <button type="button" class="carousel-btn" id="prev" aria-label="Previous photo">‹</button>
+
+          <div class="carousel-window" aria-live="polite">
+            <img src="assets/speedcube-1.jpg" class="slide" alt="Speedcubing photo 1" loading="lazy">
+            <img src="assets/speedcube-2.jpg" class="slide" alt="Speedcubing photo 2" loading="lazy">
+            <img src="assets/speedcube-3.jpg" class="slide" alt="Speedcubing photo 3" loading="lazy">
+          </div>
+
+          <button type="button" class="carousel-btn" id="next" aria-label="Next photo">›</button>
+        </div>
+      </div>
+
+      <!-- Game design -->
+      <div class="box">
+        <h3>Game Design / Programming (started 2022)</h3>
+        <p class="muted">About 175k plays across 60+ games as of 2025.</p>
+        
+        <div class="two-col">
+          <div>
+            <h4>Ice Boat Racing</h4>
+            <p class="muted">
+              <a href="https://play.fancade.com/682F1FBFCDE139F0" target="_blank" rel="noopener">Open on Fancade</a>
+              <p>My most popular game with 123k plays and 4.3k likes</p>
+            </p>
+
+            <!-- Tap-to-play wrapper to prevent scroll trapping on mobile -->
+            <div class="embed tall tap-to-play">
+              <div class="tap-overlay">Tap to play</div>
+              <iframe
+                title="Ice Boat Racing (Fancade)"
+                src="https://play.fancade.com/682F1FBFCDE139F0"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div>
+            <h4>Footbots</h4>
+            <p class="muted">
+              <a href="https://play.fancade.com/66BB3FE98DED0A4D" target="_blank" rel="noopener">Open on Fancade</a>
+              <p>Bots programmed to play football</p>
+            </p>
+
+            <!-- Tap-to-play wrapper to prevent scroll trapping on mobile -->
+            <div class="embed tall tap-to-play">
+              <div class="tap-overlay">Tap to play</div>
+              <iframe
+                title="Footbots (Fancade)"
+                src="https://play.fancade.com/66BB3FE98DED0A4D"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <p class="muted">
+          Itch.io account:
+          <a href="https://jhgamehub.itch.io/" target="_blank" rel="noopener">jh.gamehub</a>
+        </p>
+      </div>
+
+      <!-- Research -->
+      <div class="box">
+        <h3>Maths and Science Research (started 2023)</h3>
+
+        <p>
+          I enjoy studying maths and the sciences (especially physics and astronomy), and find deep satisfaction in
+          uncovering the fundamental principles that govern the universe
+        </p>
+
+        <h4>Lagrange Points Simulation in Fancade</h4>
+
+        <div class="embed big-video">
+          <iframe
+            title="Lagrange Points Simulation (YouTube)"
+            src="https://www.youtube.com/embed/ptrUS8cJd5M?rel=0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <p class="muted">
+          Instagram study account:
+          <a href="https://www.instagram.com/jh.studyrepository/" target="_blank" rel="noopener">jh.studyrepository</a>
+        </p>
+      </div>
+
+      <p><a class="btn" href="#top">Back to top</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    JingHeng's Igloo · <a href="mailto:jinghengdeng09@gmail.com">jinghengdeng09@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  // Carousel: auto + manual + pause on hover/focus
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.getElementById("carousel");
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const nextBtn = document.getElementById("next");
+    const prevBtn = document.getElementById("prev");
+
+    if (!carousel || slides.length === 0) return;
+
+    let index = 0;
+    let timer = null;
+
+    function show(i){
+      index = (i + slides.length) % slides.length;
+      slides.forEach(s => s.style.display = "none");
+      slides[index].style.display = "block";
+    }
+
+    function next(){ show(index + 1); }
+    function prev(){ show(index - 1); }
+
+    function start(){
+      stop();
+      timer = setInterval(next, 2500);
+    }
+
+    function stop(){
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    nextBtn.addEventListener("click", () => { next(); start(); });
+    prevBtn.addEventListener("click", () => { prev(); start(); });
+
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", start);
+    carousel.addEventListener("focusin", stop);
+    carousel.addEventListener("focusout", start);
+
+    show(0);
+    start();
+  });
+
+  // Tap-to-play: prevents iframe from hijacking scroll on mobile
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".tap-to-play").forEach(box => {
+      const overlay = box.querySelector(".tap-overlay");
+      if (!overlay) return;
+
+      overlay.addEventListener("click", () => {
+        box.classList.add("active");
+        overlay.style.display = "none";
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
